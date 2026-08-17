@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tawanrung Nakata — Senior Software Engineer specializing in Go, CRM and loyalty platforms." />
+  <title>Tawanrung Nakata · Senior Software Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">TN</a>
+      <div class="nav-links">
+        <a href="#impact" data-i18n="nav.impact">Impact</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#timeline" data-i18n="nav.timeline">Timeline</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="th" aria-pressed="false">TH</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-photo" aria-hidden="true">
+        <span>TN</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Senior Software Engineer</p>
+        <h1>Tawanrung Nakata</h1>
+        <p class="lead" data-i18n="hero.lead">
+          Building multi-tenant CRM and loyalty backends adopted across enterprise deployments,
+          supporting consumer brands in F&amp;B and retail. Experienced in Go modernization,
+          performance tuning, and platform-wide engineering standards.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/cv.pdf" download data-i18n="hero.cv">Download CV</a>
+          <a class="btn btn-secondary" href="https://github.com/twrnakata" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-secondary" href="https://linkedin.com/in/tawanrung-nakata" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <h2 data-i18n="impact.title">Impact at a glance</h2>
+      <div class="metrics">
+        <article class="metric-card">
+          <span class="metric-value">16M+</span>
+          <span class="metric-label" data-i18n="impact.members">Members on loyalty platform</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">60+</span>
+          <span class="metric-label" data-i18n="impact.brands">Brands supported</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">~20s → ~5s</span>
+          <span class="metric-label" data-i18n="impact.latency">Promotion API (PHP → Go)</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">10+</span>
+          <span class="metric-label" data-i18n="impact.services">Microservices on shared Go library</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 data-i18n="exp.title">Selected experience</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 data-i18n="exp.crm.title">CRM multi-tenant backend</h3>
+          <p class="card-meta" data-i18n="exp.crm.meta">DeepBlok · Go · Hexagonal / Clean Architecture</p>
+          <p data-i18n="exp.crm.body">
+            Designed loyalty backend services for membership, points, coupons, and transactions
+            across multi-tenant enterprise deployments.
+          </p>
+          <ul>
+            <li data-i18n="exp.crm.li1">Public and internal service layers for high-volume loyalty workflows</li>
+            <li data-i18n="exp.crm.li2">Shared Go library adopted across 10+ microservices and batch jobs</li>
+            <li data-i18n="exp.crm.li3">Kafka event publishing, Redis caching, AWS Lambda integrations</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="exp.php.title">PHP → Go modernization</h3>
+          <p class="card-meta" data-i18n="exp.php.meta">Promotion API · Query optimization · Team lead</p>
+          <p data-i18n="exp.php.body">
+            Led migration from legacy PHP and stored procedures to Go, replacing database-heavy
+            logic with optimized queries and clearer service structure.
+          </p>
+          <ul>
+            <li data-i18n="exp.php.li1">Reduced nonprod response time from ~20s to ~5s</li>
+            <li data-i18n="exp.php.li2">Improved maintainability and operational reliability</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="exp.obs.title">Observability &amp; platform standards</h3>
+          <p class="card-meta" data-i18n="exp.obs.meta">OpenSearch · Grafana · CloudWatch</p>
+          <p data-i18n="exp.obs.body">
+            Introduced runtime-configurable log levels and rolled out observability patterns
+            across nonprod and production environments.
+          </p>
+          <ul>
+            <li data-i18n="exp.obs.li1">Technical point of contact for shared platform standards</li>
+            <li data-i18n="exp.obs.li2">Mentored developers on testing, CI/CD, and code quality</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 data-i18n="proj.title">Portfolio projects</h2>
+      <article class="project-card">
+        <div class="project-header">
+          <h3>Loyalty Wallet API</h3>
+          <span class="badge" data-i18n="proj.badge">Personal demo</span>
+        </div>
+        <p data-i18n="proj.body">
+          Register/login, points wallet (top-up / redeem) with idempotent redeem —
+          a simplified loyalty backend pattern in Go with hexagonal layout and TDD.
+        </p>
+        <p class="tech-tags">Go · Fiber · GORM · SQLite · JWT · Hexagonal Architecture</p>
+        <div class="project-links">
+          <a class="btn btn-small" href="https://github.com/twrnakata/loyalty-wallet-api" target="_blank" rel="noopener" data-i18n="proj.github">View on GitHub</a>
+          <span class="muted" data-i18n="proj.demo">Live demo — coming soon</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 data-i18n="skills.title">Technical skills</h2>
+      <div class="skill-grid">
+        <div>
+          <h3 data-i18n="skills.backend">Backend</h3>
+          <p>Go (Fiber, GORM, JWT), PHP (Lumen, Slim), REST API design</p>
+        </div>
+        <div>
+          <h3 data-i18n="skills.data">Data &amp; messaging</h3>
+          <p>MySQL, Redis, Kafka, SQLite</p>
+        </div>
+        <div>
+          <h3 data-i18n="skills.cloud">Cloud &amp; ops</h3>
+          <p>AWS (Lambda, S3, SNS, CloudWatch), Docker, Jenkins</p>
+        </div>
+        <div>
+          <h3 data-i18n="skills.obs">Observability &amp; quality</h3>
+          <p>OpenSearch, Grafana, testify, gomock, unit &amp; integration tests</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 data-i18n="about.title">About</h2>
+      <p data-i18n="about.body">
+        Computer Science graduate with a prior degree in Accounting. That mix of engineering and
+        business context is useful when building loyalty and CRM systems that have to be correct
+        for finance-adjacent workflows as well as scalable for product teams.
+      </p>
+      <ul class="about-list">
+        <li data-i18n="about.edu1">B.Sc. Computer Science, Ramkhamhaeng University (2018–2022), GPA 3.31</li>
+        <li data-i18n="about.edu2">B.B.A. Accounting, Ramkhamhaeng University (2010–2015)</li>
+      </ul>
+    </section>
+
+    <section id="timeline" class="section">
+      <h2 data-i18n="tl.title">Timeline</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-date">Jan 2023 – Jun 2026</span>
+          <h3 data-i18n="tl.db.title">Senior Software Engineer · DeepBlok</h3>
+          <p data-i18n="tl.db.body">
+            CRM and loyalty backends on a multi-tenant platform. Led PHP-to-Go migration,
+            shared library adoption, and observability rollout across client deliveries.
+          </p>
+        </li>
+        <li>
+          <span class="tl-date">2015 – 2021</span>
+          <h3 data-i18n="tl.wp.title">Freelance · WordPress</h3>
+          <p data-i18n="tl.wp.body">Built and maintained WordPress / WooCommerce sites for small businesses.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 data-i18n="contact.title">Contact</h2>
+      <p data-i18n="contact.lead">Bangkok · Open to Senior Backend / Platform roles</p>
+      <ul class="contact-list">
+        <li><a href="mailto:tawanrung.nkt@gmail.com">tawanrung.nkt@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/tawanrung-nakata" target="_blank" rel="noopener">linkedin.com/in/tawanrung-nakata</a></li>
+        <li><a href="https://github.com/twrnakata" target="_blank" rel="noopener">github.com/twrnakata</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Tawanrung Nakata</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
