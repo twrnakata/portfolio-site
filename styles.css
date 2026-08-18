@@ -124,16 +124,17 @@ main {
 .hero-photo {
   width: 140px;
   height: 140px;
-  border: 1px dashed var(--border);
+  border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--bg-elevated);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.06em;
+  overflow: hidden;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .eyebrow {
@@ -424,6 +425,5 @@ main {
   .hero-photo {
     width: 96px;
     height: 96px;
-    font-size: 1.1rem;
   }
 }
