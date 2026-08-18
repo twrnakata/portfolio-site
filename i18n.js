@@ -10,7 +10,7 @@ const translations = {
     "hero.eyebrow": "Senior Software Engineer",
     "hero.lead":
       "Building multi-tenant CRM and loyalty backends adopted across enterprise deployments, supporting consumer brands in F&B and retail. Experienced in Go modernization, performance tuning, and platform-wide engineering standards.",
-    "hero.cv": "Download CV",
+    "hero.contact": "Contact",
     "impact.title": "Impact at a glance",
     "impact.members": "Members on loyalty platform",
     "impact.brands": "Brands supported",
@@ -72,7 +72,7 @@ const translations = {
     "hero.eyebrow": "วิศวกรซอฟต์แวร์อาวุโส",
     "hero.lead":
       "ออกแบบและพัฒนาแบ็กเอนด์ CRM และระบบสะสมแต้มแบบ multi-tenant สำหรับองค์กร รองรับแบรนด์ในกลุ่ม F&B และค้าปลีก มีประสบการณ์ย้ายระบบจาก PHP ไป Go ปรับประสิทธิภาพ และวางมาตรฐานวิศวกรรมร่วมกันทั้งแพลตฟอร์ม",
-    "hero.cv": "ดาวน์โหลด CV",
+    "hero.contact": "ติดต่อ",
     "impact.title": "ผลลัพธ์โดยสรุป",
     "impact.members": "สมาชิกบนแพลตฟอร์มสะสมแต้ม",
     "impact.brands": "แบรนด์ที่รองรับ",

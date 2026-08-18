@@ -13,7 +13,6 @@ Related project: [loyalty-wallet-api](https://github.com/twrnakata/loyalty-walle
 | `index.html` | Page structure |
 | `styles.css` | Layout and light theme |
 | `i18n.js` | EN / TH copy and language switch |
-| `assets/cv.pdf` | Downloadable CV |
 
 ## Preview locally
 
