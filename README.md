@@ -4,6 +4,8 @@ Personal portfolio site for a senior software engineer working on Go backends, C
 
 The site is a single static page: English by default, with an in-page Thai translation. It is hosted on Cloudflare Pages from this repository.
 
+**Live site:** [https://portfolio-site-2vs.pages.dev/](https://portfolio-site-2vs.pages.dev/)
+
 Related project: [loyalty-wallet-api](https://github.com/twrnakata/loyalty-wallet-api)
 
 ## Contents
